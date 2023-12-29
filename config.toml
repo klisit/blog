@@ -1,0 +1,90 @@
+# The URL the site will be built for
+base_url = "https://klisit.com"
+BASE_URL = "https://klisit.com"
+
+title = "Klisit"
+
+author = "Klisit"
+
+taxonomies = [
+  { name = "tags", feed = true },
+  { name = "categories", paginate_by = 5 },
+  { name = "authors" },
+]
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# theme
+theme = "DeepThought"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+katex.enabled = true
+katex.auto_render = true
+
+chart.enabled = true
+mermaid.enabled = true
+galleria.enabled = true
+
+navbar_items = [
+  { code = "en", nav_items = [
+    { url = "/", name = "Home" },
+    { url = "/posts", name = "Posts" },
+    { url = "/docs", name = "Docs" },
+    { url = "/tags", name = "Tags" },
+    { url = "/categories", name = "Categories" },
+  ] },
+]
+
+# Add links to favicon, you can use https://realfavicongenerator.net/ to generate favicon for your site
+[extra.favicon]
+favicon_16x16 = "/icons/favicon-16x16.png"
+favicon_32x32 = "/icons/favicon-32x32.png"
+apple_touch_icon = "/icons/apple-touch-icon.png"
+safari_pinned_tab = "/icons/safari-pinned-tab.svg"
+webmanifest = "/icons/site.webmanifest"
+
+# Author details
+[extra.author]
+name = "Klisit"
+avatar = "https://0.gravatar.com/avatar/ab5209f2e788c7616e4fb481b1bf9c35865fcbcea685d9e770b13b53d6f7af87"
+
+# Social links
+[extra.social]
+email = "klisit9527@outlook.com"
+steam = "klisit9527"
+facebook = ""
+github = "klisit"
+gitlab = ""
+keybase = ""
+linkedin = ""
+stackoverflow = ""
+twitter = ""
+instagram = ""
+behance = ""
+google_scholar = ""
+orcid = ""
+mastodon_username = ""
+mastodon_server = "mastodon.social"
+
+
+# To add google analytics
+[extra.analytics]
+google = "<your_gtag>"
+
+# To add disqus comments
+[extra.commenting]
+disqus = "<your_disqus_shortname>"
+
+# To enable mapbox maps
+[extra.mapbox]
+enabled = true
+access_token = "<your_access_token>"

@@ -1,0 +1,6 @@
+{% extends "DeepThought/templates/base.html" %} {% block other_lang_search_js %}
+<script src="{{ get_url(path='js/lunr.stemmer.support.js') }}"></script>
+<script src="{{ get_url(path='js/tinyseg.js') }}"></script>
+<script src="{{ get_url(path='js/lunr.' ~ lang ~ '.js') }}"></script>
+<script src="{{ get_url(path='js/search.js') }}"></script>
+{% endblock %}
