@@ -34,13 +34,22 @@ chart.enabled = true
 mermaid.enabled = true
 galleria.enabled = true
 
+languages = [{ code = "zh" }]
+
+#  TODO: 暂时没有编译支持中文索引包 https://www.getzola.org/documentation/content/multilingual/#configuration
 navbar_items = [
   { code = "en", nav_items = [
-    { url = "/", name = "Home" },
-    { url = "/posts", name = "Posts" },
-    { url = "/docs", name = "Docs" },
-    { url = "/tags", name = "Tags" },
-    { url = "/categories", name = "Categories" },
+    { url = "/", name = "主页" },
+    { url = "/posts", name = "文章" },
+    # { url = "/tags", name = "Tags" },
+    { url = "/categories", name = "分类" },
+    { url = "/about", name = "关于" },
+  ] },
+  { code = "zh", nav_items = [
+    { url = "/", name = "home" },
+    { url = "/posts", name = "posts" },
+    # { url = "/tags", name = "Tags" },
+    { url = "/categories", name = "categories" },
   ] },
 ]
 
